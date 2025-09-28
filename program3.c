@@ -1,17 +1,18 @@
-#include<stdio.h>
-void main()
-{
-    int n;
-    printf("this code will determine if the number is even or odd\n");
-    printf("Enter a number\n");
-    scanf("%d",&n);
-    printf("You entered: %d\n",n);
-    if(n%2==0)
-    {
-        printf("%d is even\n",n);
+#include <stdio.h>
+
+int main() {
+    int books;
+
+    printf("Enter the number of books you have: ");
+    scanf("%d", &books);
+
+    if (books > 10) {
+        printf("You have a large collection of books.\n");
+    } else if (books > 0) {
+        printf("You have some books.\n");
+    } else {
+        printf("You don't have any books.\n");
     }
-    else
-    {
-        printf("%d is odd\n",n);
-    }
+
+    return 0;
 }
